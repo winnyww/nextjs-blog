@@ -6,7 +6,7 @@ import PROJECT_4 from '../styles/projects/Project_4.jpg';
 import PROJECT_5 from '../styles/projects/Project_5.nosync.png';
 import PROJECT_6 from '../styles/projects/Project_6.png';
 import PROJECT_7 from '../styles/projects/Project_7.png';
-import PROJECT_8 from '../styles/projects/Project_8.JPG';
+// import PROJECT_8 from '../styles/projects/Project_8.JPG';
 import PROJECT_9 from '../styles/projects/test1.png';
 
 // first 3 projects are visible on the homepage while all are visible on the work page.
@@ -19,7 +19,7 @@ export const projects = [
         githubLink: '/',
         projectLink: '/',
         tech: ['IoT', 'Figma', 'Soft Robotics'],
-        photo: [PROJECT_8],
+        photo: [PROJECT_7],
         link: ['./Bondie']
     },
     {
