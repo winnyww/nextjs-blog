@@ -1,0 +1,138 @@
+.navbar{
+  z-index: 5000;
+  width: -webkit-fill-available;
+  padding: 1rem 1rem 1.3rem 1rem;
+}
+
+.navlinks {
+  padding: 0 1.5rem;
+  font-size: 18px;
+  /* background-color: antiquewhite; */
+} 
+
+.navlinks a{
+  opacity: 80%;
+  position: relative;
+  text-transform: uppercase;
+  } 
+
+.navlinks a:hover{
+  opacity: 100%;
+}
+
+.navlinks a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 105%;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #4F4F4F;
+  height: 1px;
+}
+
+.navlinks a:hover:after {
+  width: 100%;
+  transition: 0.25s linear;
+}
+
+.footermain{
+  padding: 2rem;
+  text-align: left;
+  /* margin-top: 15vh; */
+}
+
+.footertable {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 20vw;
+  grid-row-gap: 5vh;
+  place-items: left;
+  margin: 2rem auto;
+  width: 80%;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.letschat{
+  width: 250px;
+  height: 60px;
+  background-image: url('letschat.png');
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 50%;
+  /* border: black 1px solid; */
+}
+
+.footerText{
+  font-family: 'DM Sans';
+  font-size: 16px;
+}
+
+.footerSmallTable{
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 5vw;
+  grid-row-gap: 5vh;
+  place-items: left;
+}
+
+.footertable li{
+  list-style: none;
+  text-align: left;
+  width: fit-content;
+  font-family: 'DM Sans';
+}
+
+.footertable li{
+  opacity: 80%;
+  position: relative;
+} 
+
+.footertable li:hover{
+  opacity: 100%;
+}
+
+.footertable li:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 105%;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #4F4F4F;
+  height: 1px;
+}
+
+.footertable li:hover:after {
+  width: 100%;
+  transition: 0.25s linear;
+}
+
+.listHeading{
+  font-size: 16px !important;
+}
+
+@media only screen and (max-width: 950px){
+  .navlinks {
+    padding: 0.5rem;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+  } 
+}
+
+@media only screen and (min-width: 950px){
+  .navlinks {
+    padding: 0.5rem;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+  } 
+}
+
+

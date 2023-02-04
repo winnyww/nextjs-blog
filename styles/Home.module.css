@@ -1,91 +1,81 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+
+.heading{
+  height: 100vh;
+  width: 99vw;
+  text-align: center;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.heading::before{
+  content: ''; 
+  position: absolute;
+  top: 0;
+  width: 720px;
+  height: 70vh;
+  background-image: url('background-logo1.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100%;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
+.headingText{
+  position: relative;
+  font-family: 'DM Sans';
+  font-size: 22px;
+  padding: 65vh 0vw 1vh 0vw;
   text-align: center;
+  color: #4F4F4F;
 }
 
-.title,
-.description {
-  text-align: center;
+.arrow{
+  padding: 5vh 5vw;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  font-size: 23px;
+  font-family: 'Playfair', serif;
+  background-image: url('arrow.gif');
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  background-position: 50%;
 }
 
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.arrow:hover{
+  transform: translateY(10px);
+  transform: scale(1.15);
+  transition: 0.2s ease-in-out;
 }
 
-.grid {
+.workmain{
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  /* border: black 1px solid; */
+  justify-content: center;
+  padding-top: 5vh;
+} 
 
-  max-width: 800px;
-  margin-top: 3rem;
+
+@media only screen and (max-width: 850px){
+  .heading::before{
+    width: 560px;
+    transition: 0.5s ease-in-out;
+  }
+  .headingText{
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+  }
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media only screen and (min-width: 850px){
+  .heading::before{
+    width: 720px;
+    transition: 0.5s ease-in-out;
+  }
+  .headingText{
+    font-size: 22px;
+    transition: 0.5s ease-in-out;
   }
 }
