@@ -4,7 +4,7 @@ import { Button, Tag, TagLabel } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import ScrollButton from '../Components/ScrollButton';
 
-const Bondie = ({ currentTheme }) => {
+const bondie = ({ currentTheme }) => {
 
     return (
         <div>
@@ -293,4 +293,4 @@ const Bondie = ({ currentTheme }) => {
     )
 }
 
-export default Bondie
+export default bondie

@@ -15,25 +15,25 @@ const Navlinks = () => {
     return (
         <>
             <div className={styles.navlinks} style={{marginRight: '2vw'}}>
-                <Link href='/'><a style={{ borderBottom: activeLink === '/' ? '1.5px solid #4F4F4F' : '0px solid #000'}}
+                <Link href='/'  style={{ borderBottom: activeLink === '/' ? '1.5px solid #4F4F4F' : '0px solid #000'}}
                     onClick={()=>{
                         scroller.scrollTo('home', {
                         duration: 800,
                         delay: 0,
                         smooth: 'easeInOutQuart'
                         })
-                    }}>Home</a>
+                    }}>Home
                 </Link>
             </div>
             <div className={styles.navlinks} style={{marginRight: '2vw'}}>
-                <Link href='/#work'><a style={{ borderBottom: activeLink === '/#work' ? '1.5px solid #4F4F4F' : '0px solid #000'}}
+                <Link href='/#work' style={{ borderBottom: activeLink === '/#work' ? '1.5px solid #4F4F4F' : '0px solid #000'}}
                     onClick={()=>{
                         scroller.scrollTo('work', {
                         duration: 800,
                         delay: 0,
                         smooth: 'easeInOutQuart'
                         })
-                    }}>Work</a>
+                    }}>Work
                 </Link>
             </div>
             {/* <div className={styles.navlinks}>

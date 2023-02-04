@@ -16,32 +16,32 @@ const Footer = ({ currentTheme }) => {
                 <div className={styles.footerSmallTable}>
                     <ul>
                         <div className={styles.listHeading}>Wanna Connect?</div>
-                        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><a><li>Email</li></a></Link>  
+                        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email : ''}`}><li>Email</li></Link>  
                         {userinfo.socials ?
                             userinfo.socials.map((social, key) => {
                                 return (
-                                    <Link href={social.link} key={key}><a><li>{social.type}</li></a></Link>
+                                    <Link href={social.link} key={key}><li>{social.type}</li></Link>
                                 )
                             }) : null
                         }                  
                     </ul>
                     <ul>
                         <div className={styles.listHeading}>Go back to Pages</div>
-                        <Link href='/'><a><li onClick={()=>{
+                        <Link href='/'><li onClick={()=>{
                                                             scroller.scrollTo('home', {
                                                             duration: 800,
                                                             delay: 0,
                                                             smooth: 'easeInOutQuart'
                                                             })
-                                                        }}>Home</li></a></Link>
-                        <Link href='/#work'><a><li onClick={()=>{
+                                                        }}>Home</li></Link>
+                        <Link href='/#work'><li onClick={()=>{
                                                             scroller.scrollTo('work', {
                                                             duration: 800,
                                                             delay: 0,
                                                             smooth: 'easeInOutQuart'
                                                             })
-                                                        }}>Work</li></a></Link>
-                        <Link href='/about'><a><li >About</li></a></Link>
+                                                        }}>Work</li></Link>
+                        <Link href='/about'><li >About</li></Link>
                     </ul>
                 </div>
             </div>

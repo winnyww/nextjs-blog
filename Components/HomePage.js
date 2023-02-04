@@ -108,13 +108,13 @@ const HomePage = ({ currentTheme }) => {
                 <h1 className={styles.headingText}>✨creative technologist in the bay area✨</h1>
                 <SocialLinks />
                 <br></br><br></br>
-                <Link href='/#work'><a><div className={styles.arrow} onClick={()=>{
+                <Link href='/#work'><div className={styles.arrow} onClick={()=>{
                     scroller.scrollTo('work', {
                     duration: 800,
                     delay: 0,
                     smooth: 'easeInOutQuart'
                     })
-                }}></div></a></Link>
+                }}></div></Link>
             </div>
             <div name="work">
                 <div className={styles.workmain}  data-aos='fade-up' >

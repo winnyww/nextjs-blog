@@ -26,8 +26,7 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
     return (
         <div className={styles.navbar} style={{ position: 'fixed' }}>
             <div style={{ display: 'flex', gap: '60vw', justifyContent: 'space-evenly', alignItems: 'center', marginBottom: !drawerVisible ? '0' : '10px' }}>
-                {/* <Link href='/'><a><h2 className={styles.logo}>{userinfo.logoText}</h2></a></Link> */}
-                <Link href='/'><a><div className={styles.logo}></div></a></Link>
+               <Link href='/'><div className={styles.logo}></div></Link>
                 <div style={{ display: 'flex', gap: '2vw', flexWrap: 'nowrap', alignItems: 'center' }}>
                     {!drawerVisible
                         ? <div style={{ display: 'flex' }}>
